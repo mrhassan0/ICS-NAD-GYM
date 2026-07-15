@@ -1,0 +1,147 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [ 7 0 R 9 0 R 11 0 R 13 0 R ] /Count 4 >>
+endobj
+6 0 obj
+<< /Length 1953 >>
+stream
+BT /F2 19 Tf 38.00 553.00 Td (Current Results Only) Tj ET
+BT /F1 9.5 Tf 38.00 533.00 Td (MS thesis: ICS-NAD-Gym + LLM-shaped RL for ICS intrusion detection | Updated 2026-07-09) Tj ET
+0.80 w 38.00 521.00 m 804.00 521.00 l S
+BT /F2 12 Tf 38.00 490.00 Td (Scope) Tj ET
+BT /F1 10 Tf 38.00 472.00 Td (This PDF reports the current result situation. It includes the static supervised baselines plus all three RecurrentPPO runs) Tj ET
+BT /F1 10 Tf 38.00 458.00 Td (now present in experiments/: v1, v2 big, and RL+LLM shaped. Supervised models are still static classifiers and have not yet) Tj ET
+BT /F1 10 Tf 38.00 444.00 Td (been adapted into ICSNADGym policies.) Tj ET
+BT /F2 12 Tf 38.00 422.00 Td (Key Numbers) Tj ET
+BT /F1 9.8 Tf 48.00 402.00 Td (- Best static supervised test F1: GBDT = 0.985 \(accuracy 0.975, precision 0.971, recall 1.000\).) Tj ET
+BT /F1 9.8 Tf 48.00 386.00 Td (- Best RecurrentPPO-family test F1 on base reward env: RL+LLM shaped = 0.909.) Tj ET
+BT /F1 9.8 Tf 48.00 370.00 Td (- Best RecurrentPPO-family test reward on base reward env: RL+LLM shaped = 2447.53.) Tj ET
+BT /F1 9.8 Tf 48.00 354.00 Td (- Base-reward comparison uses fresh val/test envs per model: episode_length=1024, seed=123, n_episodes=15.) Tj ET
+BT /F1 9.8 Tf 48.00 338.00 Td (- RL+LLM shaped was also evaluated in a shaped env; F1 is unchanged, shaped reward differs slightly due to the potential term.) Tj ET
+BT /F2 12 Tf 38.00 314.00 Td (Current Interpretation) Tj ET
+BT /F1 10 Tf 38.00 296.00 Td (Static supervised ML remains strongest as a row-level classifier. But among the RL policies, v2 improves over v1 and RL+LLM) Tj ET
+BT /F1 10 Tf 38.00 282.00 Td (shaped is currently the strongest RecurrentPPO-family result on the base-reward test evaluation.) Tj ET
+BT /F1 10 Tf 38.00 268.00 Td (The full thesis comparison still needs supervised-as-policy evaluation inside ICSNADGym before claiming an operational) Tj ET
+BT /F1 10 Tf 38.00 254.00 Td (winner.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2041 >>
+stream
+BT /F2 19 Tf 38.00 553.00 Td (Static Supervised Baseline Results) Tj ET
+BT /F1 9.5 Tf 38.00 533.00 Td (Current artifact: data/supervised_baseline_results.json | Not simulator-adapted) Tj ET
+0.80 w 38.00 521.00 m 804.00 521.00 l S
+BT /F1 10 Tf 38.00 490.00 Td (Models sorted by test F1. Metrics are static row-level classification metrics.) Tj ET
+0.900 g 34.00 462.00 774.00 18.00 re f 0 g
+BT /F4 9.2 Tf 38.00 466.00 Td (model              rows   valF1 testAcc   testP   testR  testF1  train_s) Tj ET
+0.50 w 38.00 454.00 m 804.00 454.00 l S
+BT /F3 9.2 Tf 38.00 449.00 Td (GBDT             300000   0.894   0.975   0.971   1.000   0.985     49.3) Tj ET
+BT /F3 9.2 Tf 38.00 434.00 Td (RandomForest     300000   0.931   0.852   0.851   1.000   0.920      3.6) Tj ET
+BT /F3 9.2 Tf 38.00 419.00 Td (AdaBoost         300000   0.936   0.848   0.851   0.995   0.917     18.9) Tj ET
+BT /F3 9.2 Tf 38.00 404.00 Td (LightGBM         300000   0.922   0.847   0.851   0.995   0.917      1.0) Tj ET
+BT /F3 9.2 Tf 38.00 389.00 Td (XGBoost          300000   0.922   0.846   0.851   0.993   0.916      6.6) Tj ET
+BT /F3 9.2 Tf 38.00 374.00 Td (ANN              300000   0.924   0.808   0.845   0.948   0.893     16.9) Tj ET
+BT /F3 9.2 Tf 38.00 359.00 Td (ELM              300000   1.000   0.712   0.827   0.835   0.831      3.9) Tj ET
+BT /F3 9.2 Tf 38.00 344.00 Td (KNN               50000   1.000   0.712   0.827   0.835   0.831      0.0) Tj ET
+BT /F3 9.2 Tf 38.00 329.00 Td (SVC               15000   1.000   0.711   0.827   0.834   0.831      0.0) Tj ET
+BT /F3 9.2 Tf 38.00 314.00 Td (GaussianNB       300000   0.898   0.553   0.788   0.647   0.711      0.1) Tj ET
+BT /F2 11 Tf 38.00 287.00 Td (Notes) Tj ET
+BT /F1 9.3 Tf 48.00 271.00 Td (- These models were retrained locally on the harmonized Parquet corpus and current splits; the numbers are not copied from the) Tj ET
+BT /F1 9.3 Tf 48.00 258.00 Td (external paper.) Tj ET
+BT /F1 9.3 Tf 48.00 245.00 Td (- They do not yet have simulator reward, false-block cost, or quarantine behavior results.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1705 >>
+stream
+BT /F2 19 Tf 38.00 553.00 Td (RecurrentPPO Family: Base-Reward Evaluation) Tj ET
+BT /F1 9.5 Tf 38.00 533.00 Td (All three final models evaluated on same base ICSNADGym objective) Tj ET
+0.80 w 38.00 521.00 m 804.00 521.00 l S
+BT /F1 9.8 Tf 38.00 490.00 Td (Protocol: fresh env per model/split, episode_length=1024, seed=123, 15 episodes. LLM shaping disabled for this table.) Tj ET
+0.900 g 34.00 460.00 774.00 18.00 re f 0 g
+BT /F4 8.6 Tf 38.00 464.00 Td (model                    steps split    reward       std    prec     rec      f1    fp    fn) Tj ET
+0.50 w 38.00 452.00 m 804.00 452.00 l S
+BT /F3 8.6 Tf 38.00 447.00 Td (RecurrentPPO v1         500000 val     2389.67   6417.15   0.735   0.877   0.800  2572   998) Tj ET
+BT /F3 8.6 Tf 38.00 432.00 Td (RecurrentPPO v1         500000 test    -971.87   6986.12   0.932   0.706   0.803   409  2344) Tj ET
+BT /F3 8.6 Tf 38.00 417.00 Td (RecurrentPPO v2 big    2000000 val     3739.47   7793.13   0.755   0.877   0.811  2316   997) Tj ET
+BT /F3 8.6 Tf 38.00 402.00 Td (RecurrentPPO v2 big    2000000 test    1969.60   6674.06   0.996   0.734   0.845    25  2119) Tj ET
+BT /F3 8.6 Tf 38.00 387.00 Td (RL+LLM shaped          2000000 val     3808.80   7866.20   0.749   0.880   0.810  2395   972) Tj ET
+BT /F3 8.6 Tf 38.00 372.00 Td (RL+LLM shaped          2000000 test    2447.53   5143.45   0.982   0.845   0.909   120  1235) Tj ET
+BT /F2 11 Tf 38.00 345.00 Td (Readout) Tj ET
+BT /F1 9.6 Tf 38.00 329.00 Td (On the same base-reward simulator episodes, v2 improves over v1. RL+LLM shaped gives the strongest current RL-family test) Tj ET
+BT /F1 9.6 Tf 38.00 315.50 Td (result: reward 2447.53 and F1 0.909, with high precision 0.982 and recall 0.845.) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 1736 >>
+stream
+BT /F2 19 Tf 38.00 553.00 Td (LLM-Shaped Reward and Comparison Caveat) Tj ET
+BT /F1 9.5 Tf 38.00 533.00 Td (Separating base operational reward from shaped training reward) Tj ET
+0.80 w 38.00 521.00 m 804.00 521.00 l S
+BT /F2 10 Tf 38.00 490.00 Td (RL+LLM shaped model evaluated with use_llm_shaping=True:) Tj ET
+0.900 g 34.00 464.00 520.00 18.00 re f 0 g
+BT /F4 9.5 Tf 38.00 468.00 Td (split      reward       std    prec  recall      f1) Tj ET
+BT /F3 9.5 Tf 38.00 451.00 Td (val       3749.28   7859.34   0.749   0.880   0.810) Tj ET
+BT /F3 9.5 Tf 38.00 435.00 Td (test      2387.77   5139.70   0.982   0.845   0.909) Tj ET
+BT /F2 11 Tf 38.00 401.00 Td (Why Earlier v1 Numbers Differ) Tj ET
+BT /F1 9.6 Tf 38.00 384.00 Td (The older Phase 3/evaluate_baseline.py script hardcodes v1 and evaluates RecurrentPPO after running always_ALLOW,) Tj ET
+BT /F1 9.6 Tf 38.00 370.50 Td (always_ALERT, and oracle on the same env object. That means v1 sees a later deterministic episode sequence. The fresh-seed) Tj ET
+BT /F1 9.6 Tf 38.00 357.00 Td (three-model table above is cleaner for comparing v1 vs v2 vs RL+LLM.) Tj ET
+BT /F1 9.5 Tf 48.00 339.50 Td (Legacy script v1 val: reward 2939.13, precision 0.920, recall 0.983, F1 0.950) Tj ET
+BT /F1 9.5 Tf 48.00 324.50 Td (Legacy script v1 test: reward 286.60, precision 0.684, recall 0.835, F1 0.752) Tj ET
+BT /F2 11 Tf 38.00 297.50 Td (Still Missing) Tj ET
+BT /F1 9.5 Tf 48.00 280.50 Td (- Supervised models still need simulator-policy adaptation for a full operational comparison.) Tj ET
+BT /F1 9.5 Tf 48.00 267.00 Td (- Recommended policy mapping: low attack probability -> ALLOW, medium -> ALERT, high -> BLOCK; tune thresholds on validation) Tj ET
+BT /F1 9.5 Tf 48.00 253.50 Td (reward.) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000228 00000 n 
+0000000301 00000 n 
+0000000380 00000 n 
+0000002384 00000 n 
+0000002540 00000 n 
+0000004632 00000 n 
+0000004788 00000 n 
+0000006545 00000 n 
+0000006703 00000 n 
+0000008491 00000 n 
+0000008649 00000 n 
+trailer
+<< /Size 15 /Root 14 0 R >>
+startxref
+8699
+%%EOF

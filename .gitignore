@@ -1,0 +1,33 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Local assistant metadata
+.agents/
+.claude/
+.codex/
+
+# Datasets and downloaded model caches
+data/
+datasets/
+models_cache/
+external/
+
+# Generated training artifacts
+experiments/**/*.zip
+experiments/tensorboard/
+experiments/logs/
+experiments/.locks/
